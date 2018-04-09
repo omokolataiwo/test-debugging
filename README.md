@@ -1,1 +1,2 @@
-# test-debugging
+# Test Debugging
+JavaScript utilities using TDD
