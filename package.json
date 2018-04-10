@@ -4,7 +4,8 @@
   "description": "Implement utilitiy functions following TDD approach",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test":
+      "./node_modules/.bin/mocha --compilers js:babel-core/register  ./test/**/*.spec.js",
     "build":
       "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "npm run build && node dist/index.js"
